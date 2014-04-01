@@ -25,6 +25,7 @@
         android:layout_below="@+id/lblUserName"
         android:ems="10"
         android:inputType="textPersonName" />
+    	<requestFocus />
 
     <TextView
         android:id="@+id/lblPassword"
@@ -45,7 +46,6 @@
         android:ems="10"
         android:inputType="textPassword" >
 
-        <requestFocus />
     </EditText>
 
     <Button
