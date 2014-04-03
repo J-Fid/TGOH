@@ -27,6 +27,7 @@
         android:inputType="textPersonName" />
     	<requestFocus />
 
+
     <TextView
         android:id="@+id/lblPassword"
         android:layout_width="wrap_content"
@@ -46,6 +47,10 @@
         android:ems="10"
         android:inputType="textPassword" >
 
+<<<<<<< HEAD
+=======
+     
+>>>>>>> refs/remotes/Sam/master
     </EditText>
 
     <Button
