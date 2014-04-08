@@ -19,64 +19,19 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		//getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 	
-<<<<<<< HEAD
     // Method for displaying data entry view
-    public void setDefaultView() {
-        setContentView(R.layout.activity_main);
-        
-        // Obtain references to widgets
-        Button signIn = (Button) findViewById(R.id.btnSignIn);
-        Button signUp = (Button) findViewById(R.id.btnSignUp);
-        
-        final EditText username = (EditText) findViewById(R.id.txtUserName);
-        final EditText password = (EditText) findViewById(R.id.txtPassword);
-    
-        
-// Set onClickListeners for buttons   
-        //Sign In
-        signIn.setOnClickListener(new View.OnClickListener()
-        {
-        	@Override
-			public void onClick(View v)
-        	{
-        		String userName = username.getText().toString();
-        		String passWord = password.getText().toString();
-        		
-        		if(userName.equals(null))
-        		{
-        			Toast.makeText(MainActivity.this, "Please enter a username.", Toast.LENGTH_SHORT).show();
-        		}
-        		else
-        		{
-        			 
-        		}
-        	}
-        });
-    
-        //Sign Up
-        signUp.setOnClickListener(new View.OnClickListener()
-        {
-        	@Override
-			public void onClick(View v)
-        	{
-        		
-        	}
-        });        
-    }
-
-=======
 	public void setDefaultView(){
 		setContentView(R.layout.activity_main);
 		
-		Button Signin = (Button) findViewById(R.id.signin);
-		Button Signup = (Button) findViewById(R.id.signup);
+		Button Signin = (Button) findViewById(R.id.btnSignIn);
+		Button Signup = (Button) findViewById(R.id.btnSignUp);
 		
-		final EditText Username = (EditText) findViewById(R.id.Username);
-		final EditText Password = (EditText) findViewById(R.id.Password);
+		final EditText Username = (EditText) findViewById(R.id.txtUserName);
+		final EditText Password = (EditText) findViewById(R.id.txtPassword);
 		
 		
 		Signup.setOnClickListener(new View.OnClickListener() {
@@ -92,6 +47,19 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+        		String userName = Username.getText().toString();
+        		String passWord = Password.getText().toString();
+        		
+        		if(userName.equals(null))
+        		{
+        			Toast.makeText(MainActivity.this, "Please enter a username.", Toast.LENGTH_SHORT).show();
+        		}
+        		else
+        		{
+        			//check to make sure the userName and passWord for the user are both correct
+        			
+        		}
+				
 				// Jason will make a new method for the schedule page.
 				setSchedule_page();
 
@@ -105,7 +73,7 @@ public class MainActivity extends Activity {
 	 *Display the Sign up page 
 	 **/
 	public void setSigninPage(){
-		setContentView(R.layout.signuppage);
+		//setContentView(R.layout.signuppage);
 		
 		Button Signin = (Button) findViewById(R.id.button1);
 		Button Back = (Button) findViewById(R.id.button2);
@@ -116,8 +84,9 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				
 				setDefaultView();
-				// jason will implement controllers
+				// Jason will implement controllers
 			}
 		});
 		
@@ -146,5 +115,4 @@ public class MainActivity extends Activity {
 			}
 		});
 	}
->>>>>>> refs/remotes/Sam/master
 }

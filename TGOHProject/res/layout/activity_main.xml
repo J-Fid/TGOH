@@ -46,11 +46,6 @@
         android:layout_below="@+id/lblPassword"
         android:ems="10"
         android:inputType="textPassword" >
-
-<<<<<<< HEAD
-=======
-     
->>>>>>> refs/remotes/Sam/master
     </EditText>
 
     <Button
